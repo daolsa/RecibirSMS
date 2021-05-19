@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textoInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Esperando el código de confirmación..."
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Código de confirmación..."
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/botonConfirmacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Aceptar"
+        android:layout_below="@id/editText"
+        />
+
+</RelativeLayout>
